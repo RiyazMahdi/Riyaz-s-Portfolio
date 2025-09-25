@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Riyaz<span> Mahdi</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Riyaz</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+          Aspiring Software Engineer passionate about web development and AI.
+          I've completed an AI and Software Engineering bootcamp, along with
+          certifications in Responsive Web Design and JavaScript. Currently, I'm
+          developing my portfolio while seeking a software engineering
+          apprenticeship or role.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/riyazmahdi/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/RiyazMahdi" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/_rm.04_/" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="#" onclick="copyDiscord()" title="Click to copy Discord tag">
+            <i class="bx bxl-discord"></i>
+          </a>
+          
+        </div>
+        
+
+        <div class="btn-group">
+          <a href="#contact" class="btn" onclick="hireMe()">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="images/image.png" alt="" />
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div
+        class="slider"
+        style="--width: 200px; --height: 200px; --quantity: 9"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <div class="card">
+              <i class="fa-brands fa-html5 fa-5x"></i>
+              <p class="text-lg font-bold">HTML</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 2">
+            <div class="card">
+              <i class="fa-brands fa-css3-alt fa-5x"></i>
+
+              <p class="text-lg font-bold">CSS</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 3">
+            <div class="card">
+              <i class="fa-brands fa-js fa-5x"></i>
+              <p class="text-lg font-bold">JavaScript</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 4">
+            <div class="card">
+              <i class="fa-brands fa-react fa-5x"></i>
+              <p class="text-lg font-bold">React</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 5">
+            <div class="card">
+              <i class="fa-brands fa-python fa-5x"></i>
+              <p class="text-lg font-bold">Python</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 6">
+            <div class="card">
+              <i class="fa-brands fa-node fa-5x"></i>
+              <p class="text-lg font-bold">Node.js</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 7">
+            <div class="card">
+              <i class="fa-solid fa-database fa-5x"></i>
+              <p class="text-lg font-bold">SQL</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 8">
+            <div class="card">
+              <i class="fa-solid fa-server fa-5x"></i>
+              <p class="text-lg font-bold">Express.js</p>
+            </div>
+          </div>
+          <div class="item" style="--position: 9">
+            <div class="card">
+              <i class="fa-solid fa-palette fa-5x"></i>
+              <p class="text-lg font-bold">TailwindCSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+      <div class="projects-box">
+        <div class="project-card">
+          <img src="images/Tbag.PNG" alt="Text-Based Adventure Game" />
+          <h3>Text-Based Adventure Game</h3>
+          <p>
+            An interactive Python game created during my software engineering
+            bootcamp. The game features multiple scenarios and branching
+            storylines, providing a fun text-based experience.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+          <img src="images/Survey-Form2.PNG" alt="Survey Form" />
+          <h3>Survey Form</h3>
+          <p>
+            A responsive survey form created using HTML, CSS, and JavaScript as
+            part of the freeCodeCamp certification. It features input validation
+            and form submission handling.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+          <img src="images/Product-Landing.PNG" alt="Product Landing Page" />
+          <h3>Product Landing Page</h3>
+          <p>
+            A simple yet elegant product landing page built with HTML and CSS.
+            Designed to showcase products, capture leads, and demonstrate
+            responsive design techniques.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+          <img src="images/Palindrome.PNG" alt="Palindrome Checker" />
+          <h3>Palindrome Checker</h3>
+          <p>
+            A JavaScript application designed to check whether a given string is
+            a palindrome. Developed as a part of the freeCodeCamp curriculum
+            using clean code practices.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+          <img src="images/tictactoe.PNG" alt="TicTacToe Game" />
+          <h3>TicTacToe Game</h3>
+          <p>
+            A fully functional TicTacToe game developed using React. Implements
+            state management with hooks and provides a responsive, interactive
+            user experience.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+          <img
+            src="images/anime-name-generator.PNG"
+            alt="Anime Name Generator"
+          />
+          <h3>Anime Name Generator</h3>
+          <p>
+            A fun, anime-themed name generator built with React + Vite, Tailwind
+            CSS, and a Markov Chain model! Higlighting my skills in training an
+            AI model.
+          </p>
+          <div class="btn">Review Project</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2016-2021</div>
+          <div class="timeline-content">
+            <h3>Secondary School</h3>
+            <p>
+              During my time in secondary school, I built a strong foundation in
+              mathematics and science, which sparked my interest in technology.
+              I developed problem-solving skills through subjects like computer
+              science and participated in projects that introduced me to coding.
+              My curiosity for software development grew as I explored
+              programming languages and logical thinking.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021-2023</div>
+          <div class="timeline-content">
+            <h3>Sixth Form</h3>
+            <p>
+              In sixth form, I pursued Mathematics, Further Mathematics, and
+              Physics, deepening my understanding of complex problem-solving and
+              logical reasoning. These subjects strengthened my analytical
+              mindset and ability to tackle challenging concepts, preparing me
+              for technical fields like software engineering and artificial
+              intelligence.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>Courses</h3>
+            <p>
+              To enhance my technical skills, I completed three specialized
+              courses, earning certifications in Responsive Web Design,
+              JavaScript Data Structures & Algorithms, and AI Software
+              Engineering Bootcamp. These courses provided hands-on experience
+              in full-stack programming, AI and ML, as well as some cloud
+              computing
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+  
+      <form id="contact-form">
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="text" name="name" placeholder="Full Name" required>
+                  <input type="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="input-box">
+                  <input type="text" name="phone" placeholder="Phone Number">
+                  <input type="text" name="subject" placeholder="Subject">
+              </div>
+          </div>
+  
+          <div class="input-group-2">
+              <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+              <input type="submit" value="Send Message" class="btn">
+          </div>
+      </form>
+  </section>
+  
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/riyazmahdi/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/RiyazMahdi" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/_rm.04_/" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="#" onclick="copyDiscord()" title="Click to copy Discord tag">
+          <i class="bx bxl-discord"></i>
+        </a>
+      </div>
+
+      <ul class="list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+      <p class="copywrite">© Riyaz Mahdi | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("7y_6noD0r5LoQkeYo"); 
+      })();
+    </script>
+  </body>
+</html>
