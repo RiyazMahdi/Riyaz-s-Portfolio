@@ -38,9 +38,6 @@ This project showcases my skills, projects, and experience as an aspiring **Soft
 
 ## 📬 Contact
 Feel free to reach out through the contact form on the site or connect with me:
-
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/your-link)  
-- **GitHub:** [Your GitHub Profile](https://github.com/your-username)  
 - **Email:** Riyazmahdi0@gmail.com
 
 ---
